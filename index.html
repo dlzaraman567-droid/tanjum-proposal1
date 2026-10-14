@@ -1,0 +1,416 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta http-equiv="content-type" content="text/html; charset=utf-8"/>
+	<title></title>
+	<meta name="generator" content="LibreOffice 26.8.0.3 (Linux)"/>
+	<meta name="created" content="00:00:00"/>
+	<meta name="changed" content="00:00:00"/>
+	<style type="text/css">
+		@page { size: 8.27in 11.69in; margin: 0.79in }
+		p { margin-bottom: 0.1in; line-height: 115%; background: transparent }
+		pre { font-size: 10pt; font-family: "Liberation Mono", monospace; background: transparent }
+	</style>
+</head>
+<body lang="en-US" link="#000080" vlink="#800000" dir="ltr"><pre>&lt;!DOCTYPE html&gt;
+&lt;html lang=&quot;en&quot; class=&quot;scroll-smooth&quot;&gt;
+&lt;head&gt;
+    &lt;meta charset=&quot;UTF-8&quot;&gt;
+    &lt;meta name=&quot;viewport&quot; content=&quot;width=device-width, initial-scale=1.0&quot;&gt;
+    &lt;title&gt;A Special Question for Tanjum ❤️&lt;/title&gt;
+    &lt;!-- Tailwind CSS --&gt;
+    &lt;script src=&quot;https://cdn.tailwindcss.com&quot;&gt;&lt;/script&gt;
+    &lt;!-- Google Fonts: Playfair Display &amp; Poppins --&gt;
+    &lt;link rel=&quot;preconnect&quot; href=&quot;https://fonts.googleapis.com&quot;&gt;
+    &lt;link rel=&quot;preconnect&quot; href=&quot;https://fonts.gstatic.com&quot; crossorigin&gt;
+    &lt;link href=&quot;https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..700;1,400..700&amp;family=Poppins:wght@300;400;500;600;700&amp;display=swap&quot; rel=&quot;stylesheet&quot;&gt;
+    &lt;!-- Lucide Icons --&gt;
+    &lt;script src=&quot;https://unpkg.com/lucide@latest&quot;&gt;&lt;/script&gt;
+    &lt;!-- Canvas Confetti --&gt;
+    &lt;script src=&quot;https://cdn.jsdelivr.net/npm/canvas-confetti@1.6.0/dist/confetti.browser.min.js&quot;&gt;&lt;/script&gt;
+    &lt;script&gt;
+        tailwind.config = {
+            theme: {
+                extend: {
+                    fontFamily: {
+                        serif: ['&quot;Playfair Display&quot;', 'serif'],
+                        sans: ['&quot;Poppins&quot;', 'sans-serif'],
+                    },
+                    colors: {
+                        roseGold: {
+                            50: '#fdf2f2',
+                            100: '#fbe6e6',
+                            200: '#f5d1d1',
+                            300: '#ecb0b0',
+                            400: '#df8282',
+                            500: '#ce5d5d',
+                            600: '#b84646',
+                            700: '#9b3939',
+                            800: '#803232',
+                            900: '#6a2c2c',
+                            950: '#391414',
+                        }
+                    }
+                }
+            }
+        }
+    &lt;/script&gt;
+    &lt;style&gt;
+        body {
+            font-family: 'Poppins', sans-serif;
+            background: linear-gradient(135deg, #fdf2f2 0%, #fbe6e6 50%, #f5d1d1 100%);
+            min-height: 100vh;
+            overflow-x: hidden;
+        }
+        .font-serif {
+            font-family: 'Playfair Display', serif;
+        }
+        /* Floating hearts animation */
+        @keyframes floatUp {
+            0% {
+                transform: translateY(100vh) scale(0.5);
+                opacity: 0;
+            }
+            20% {
+                opacity: 0.8;
+            }
+            80% {
+                opacity: 0.8;
+            }
+            100% {
+                transform: translateY(-10vh) scale(1.2);
+                opacity: 0;
+            }
+        }
+        .floating-heart {
+            position: absolute;
+            animation: floatUp linear infinite;
+            z-index: 0;
+            pointer-events: none;
+            color: rgba(206, 93, 93, 0.25);
+        }
+        /* Glassmorphism card */
+        .glass-card {
+            background: rgba(255, 255, 255, 0.85);
+            backdrop-filter: blur(12px);
+            -webkit-backdrop-filter: blur(12px);
+            border: 1px solid rgba(255, 255, 255, 0.6);
+            box-shadow: 0 20px 40px rgba(184, 70, 70, 0.1);
+        }
+        /* Pulse soft animation */
+        @keyframes softPulse {
+            0%, 100% { transform: scale(1); }
+            50% { transform: scale(1.05); }
+        }
+        .animate-soft-pulse {
+            animation: softPulse 3s infinite ease-in-out;
+        }
+    &lt;/style&gt;
+&lt;/head&gt;
+&lt;body class=&quot;text-roseGold-950 flex flex-col items-center justify-center min-h-screen p-4 relative&quot;&gt;
+
+    &lt;!-- Floating Background Hearts Container --&gt;
+    &lt;div id=&quot;hearts-container&quot; class=&quot;absolute inset-0 overflow-hidden pointer-events-none&quot;&gt;&lt;/div&gt;
+
+    &lt;!-- Main Container Card --&gt;
+    &lt;main class=&quot;w-full max-w-md md:max-w-lg z-10 my-auto&quot;&gt;
+        &lt;div class=&quot;glass-card rounded-3xl p-6 md:p-10 relative overflow-hidden transition-all duration-500&quot;&gt;
+            
+            &lt;!-- STEP 1: Welcome Screen --&gt;
+            &lt;div id=&quot;step-1&quot; class=&quot;step-screen flex flex-col items-center text-center space-y-6&quot;&gt;
+                &lt;div class=&quot;w-20 h-20 bg-roseGold-100 rounded-full flex items-center justify-center text-roseGold-600 shadow-inner animate-soft-pulse&quot;&gt;
+                    &lt;i data-lucide=&quot;sparkles&quot; class=&quot;w-10 h-10&quot;&gt;&lt;/i&gt;
+                &lt;/div&gt;
+                &lt;div class=&quot;space-y-2&quot;&gt;
+                    &lt;span class=&quot;text-xs uppercase tracking-widest text-roseGold-500 font-semibold&quot;&gt;An Invitation&lt;/span&gt;
+                    &lt;h1 class=&quot;font-serif text-3xl md:text-4xl font-bold text-roseGold-900 leading-tight&quot;&gt;
+                        Hey Tanjum...
+                    &lt;/h1&gt;
+                    &lt;p class=&quot;text-roseGold-700 text-sm md:text-base px-2&quot;&gt;
+                        I've made something special just for you. Take a deep breath and step into a little piece of my heart.
+                    &lt;/p&gt;
+                &lt;/div&gt;
+                &lt;button onclick=&quot;nextStep(2)&quot; class=&quot;w-full py-3.5 px-6 bg-gradient-to-r from-roseGold-500 to-roseGold-600 hover:from-roseGold-600 hover:to-roseGold-700 text-white font-medium rounded-2xl shadow-lg shadow-roseGold-500/30 transition-all duration-300 transform hover:-translate-y-0.5 active:translate-y-0 flex items-center justify-center space-x-2 group&quot;&gt;
+                    &lt;span&gt;Open My Heart&lt;/span&gt;
+                    &lt;i data-lucide=&quot;arrow-right&quot; class=&quot;w-5 h-5 transition-transform group-hover:translate-x-1&quot;&gt;&lt;/i&gt;
+                &lt;/button&gt;
+            &lt;/div&gt;
+
+            &lt;!-- STEP 2: Meaning / Appreciation --&gt;
+            &lt;div id=&quot;step-2&quot; class=&quot;step-screen hidden flex-col items-center text-center space-y-6&quot;&gt;
+                &lt;div class=&quot;w-16 h-16 bg-roseGold-100 rounded-full flex items-center justify-center text-roseGold-600 shadow-inner&quot;&gt;
+                    &lt;i data-lucide=&quot;heart&quot; class=&quot;w-8 h-8 fill-roseGold-500 text-roseGold-500&quot;&gt;&lt;/i&gt;
+                &lt;/div&gt;
+                &lt;div class=&quot;space-y-2&quot;&gt;
+                    &lt;h2 class=&quot;font-serif text-2xl md:text-3xl font-bold text-roseGold-900&quot;&gt;
+                        Do you know how much you mean to me?
+                    &lt;/h2&gt;
+                    &lt;p class=&quot;text-roseGold-700 text-sm md:text-base&quot;&gt;
+                        Every single day with you feels like a gentle melody. You bring warmth, sunshine, and endless smiles into my world.
+                    &lt;/p&gt;
+                &lt;/div&gt;
+                &lt;!-- Cute mini reason box --&gt;
+                &lt;div class=&quot;w-full bg-white/60 rounded-2xl p-4 border border-roseGold-200 text-left space-y-2&quot;&gt;
+                    &lt;div class=&quot;flex items-center space-x-2 text-roseGold-800 font-semibold text-sm&quot;&gt;
+                        &lt;i data-lucide=&quot;star&quot; class=&quot;w-4 h-4 text-amber-500 fill-amber-500&quot;&gt;&lt;/i&gt;
+                        &lt;span&gt;Things I adore about you:&lt;/span&gt;
+                    &lt;/div&gt;
+                    &lt;p id=&quot;reason-text&quot; class=&quot;text-roseGold-700 text-sm italic transition-opacity duration-300&quot;&gt;
+                        &quot;The way your eyes light up when you talk about things you love.&quot;
+                    &lt;/p&gt;
+                &lt;/div&gt;
+                &lt;div class=&quot;flex space-x-3 w-full&quot;&gt;
+                    &lt;button onclick=&quot;nextStep(1)&quot; class=&quot;w-1/3 py-3 px-4 bg-white/80 hover:bg-white text-roseGold-700 font-medium rounded-2xl border border-roseGold-200 transition-all text-sm&quot;&gt;
+                        Back
+                    &lt;/button&gt;
+                    &lt;button onclick=&quot;nextStep(3)&quot; class=&quot;w-2/3 py-3 px-4 bg-gradient-to-r from-roseGold-500 to-roseGold-600 hover:from-roseGold-600 hover:to-roseGold-700 text-white font-medium rounded-2xl shadow-lg shadow-roseGold-500/30 transition-all flex items-center justify-center space-x-2&quot;&gt;
+                        &lt;span&gt;Read More&lt;/span&gt;
+                        &lt;i data-lucide=&quot;arrow-right&quot; class=&quot;w-4 h-4&quot;&gt;&lt;/i&gt;
+                    &lt;/button&gt;
+                &lt;/div&gt;
+            &lt;/div&gt;
+
+            &lt;!-- STEP 3: Special Connection Memories --&gt;
+            &lt;div id=&quot;step-3&quot; class=&quot;step-screen hidden flex-col items-center text-center space-y-6&quot;&gt;
+                &lt;div class=&quot;w-16 h-16 bg-roseGold-100 rounded-full flex items-center justify-center text-roseGold-600 shadow-inner&quot;&gt;
+                    &lt;i data-lucide=&quot;coffee&quot; class=&quot;w-8 h-8&quot;&gt;&lt;/i&gt;
+                &lt;/div&gt;
+                &lt;div class=&quot;space-y-2&quot;&gt;
+                    &lt;h2 class=&quot;font-serif text-2xl md:text-3xl font-bold text-roseGold-900&quot;&gt;
+                        You &amp; Me
+                    &lt;/h2&gt;
+                    &lt;p class=&quot;text-roseGold-700 text-sm md:text-base&quot;&gt;
+                        Whether we're sharing laughs, late-night talks, or quiet moments—every second with you is my absolute favorite part of life, Tanjum.
+                    &lt;/p&gt;
+                &lt;/div&gt;
+                &lt;!-- Interactive memory card --&gt;
+                &lt;div class=&quot;grid grid-cols-2 gap-3 w-full&quot;&gt;
+                    &lt;div class=&quot;bg-white/60 p-3 rounded-2xl border border-roseGold-200 text-center&quot;&gt;
+                        &lt;i data-lucide=&quot;smile&quot; class=&quot;w-6 h-6 mx-auto text-roseGold-500 mb-1&quot;&gt;&lt;/i&gt;
+                        &lt;span class=&quot;text-xs font-semibold text-roseGold-900 block&quot;&gt;Your Smile&lt;/span&gt;
+                        &lt;span class=&quot;text-[11px] text-roseGold-600&quot;&gt;Brightens my darkest days&lt;/span&gt;
+                    &lt;/div&gt;
+                    &lt;div class=&quot;bg-white/60 p-3 rounded-2xl border border-roseGold-200 text-center&quot;&gt;
+                        &lt;i data-lucide=&quot;shield-heart&quot; class=&quot;w-6 h-6 mx-auto text-roseGold-500 mb-1&quot;&gt;&lt;/i&gt;
+                        &lt;span class=&quot;text-xs font-semibold text-roseGold-900 block&quot;&gt;My Safe Haven&lt;/span&gt;
+                        &lt;span class=&quot;text-[11px] text-roseGold-600&quot;&gt;Peace is wherever you are&lt;/span&gt;
+                    &lt;/div&gt;
+                &lt;/div&gt;
+                &lt;div class=&quot;flex space-x-3 w-full&quot;&gt;
+                    &lt;button onclick=&quot;nextStep(2)&quot; class=&quot;w-1/3 py-3 px-4 bg-white/80 hover:bg-white text-roseGold-700 font-medium rounded-2xl border border-roseGold-200 transition-all text-sm&quot;&gt;
+                        Back
+                    &lt;/button&gt;
+                    &lt;button onclick=&quot;nextStep(4)&quot; class=&quot;w-2/3 py-3 px-4 bg-gradient-to-r from-roseGold-500 to-roseGold-600 hover:from-roseGold-600 hover:to-roseGold-700 text-white font-medium rounded-2xl shadow-lg shadow-roseGold-500/30 transition-all flex items-center justify-center space-x-2&quot;&gt;
+                        &lt;span&gt;The Big Question&lt;/span&gt;
+                        &lt;i data-lucide=&quot;heart&quot; class=&quot;w-4 h-4 fill-white&quot;&gt;&lt;/i&gt;
+                    &lt;/button&gt;
+                &lt;/div&gt;
+            &lt;/div&gt;
+
+            &lt;!-- STEP 4: The Final Proposal Question --&gt;
+            &lt;div id=&quot;step-4&quot; class=&quot;step-screen hidden flex-col items-center text-center space-y-6&quot;&gt;
+                &lt;div class=&quot;w-20 h-20 bg-roseGold-100 rounded-full flex items-center justify-center text-roseGold-600 shadow-inner animate-soft-pulse&quot;&gt;
+                    &lt;i data-lucide=&quot;heart-handshake&quot; class=&quot;w-10 h-10 fill-roseGold-200&quot;&gt;&lt;/i&gt;
+                &lt;/div&gt;
+                &lt;div class=&quot;space-y-3&quot;&gt;
+                    &lt;span class=&quot;text-xs uppercase tracking-widest text-roseGold-500 font-semibold&quot;&gt;A Question From My Heart&lt;/span&gt;
+                    &lt;h2 class=&quot;font-serif text-3xl md:text-4xl font-bold text-roseGold-900 leading-tight&quot;&gt;
+                        Tanjum,&lt;br&gt;Will you be my girlfriend?
+                    &lt;/h2&gt;
+                    &lt;p class=&quot;text-roseGold-700 text-sm&quot;&gt;
+                        Let's make this official and create a lifetime of beautiful memories together.
+                    &lt;/p&gt;
+                &lt;/div&gt;
+
+                &lt;!-- Interactive Buttons Container --&gt;
+                &lt;div id=&quot;proposal-buttons&quot; class=&quot;relative w-full flex items-center justify-center space-x-4 pt-4 h-24&quot;&gt;
+                    &lt;button id=&quot;yes-btn&quot; onclick=&quot;celebrateSuccess()&quot; class=&quot;px-8 py-3.5 bg-gradient-to-r from-roseGold-500 to-roseGold-600 hover:from-roseGold-600 hover:to-roseGold-700 text-white font-bold rounded-2xl shadow-xl shadow-roseGold-500/40 transition-all transform hover:scale-110 active:scale-95 flex items-center space-x-2 z-20&quot;&gt;
+                        &lt;i data-lucide=&quot;heart&quot; class=&quot;w-5 h-5 fill-white&quot;&gt;&lt;/i&gt;
+                        &lt;span&gt;Yes, Absolutely! ❤️&lt;/span&gt;
+                    &lt;/button&gt;
+                    &lt;button id=&quot;no-btn&quot; onmouseover=&quot;moveNoButton()&quot; onclick=&quot;handleNoClick()&quot; class=&quot;px-6 py-3.5 bg-white/80 hover:bg-roseGold-100 text-roseGold-700 font-medium rounded-2xl border border-roseGold-200 transition-all text-sm z-10 absolute right-4 md:right-8&quot;&gt;
+                        No 🙈
+                    &lt;/button&gt;
+                &lt;/div&gt;
+                &lt;div id=&quot;no-plea&quot; class=&quot;text-xs text-roseGold-600 italic h-4&quot;&gt;&lt;/div&gt;
+            &lt;/div&gt;
+
+            &lt;!-- STEP 5: Celebration Success Screen --&gt;
+            &lt;div id=&quot;step-5&quot; class=&quot;step-screen hidden flex-col items-center text-center space-y-6&quot;&gt;
+                &lt;div class=&quot;w-24 h-24 bg-gradient-to-tr from-roseGold-400 to-roseGold-600 rounded-full flex items-center justify-center text-white shadow-2xl animate-bounce&quot;&gt;
+                    &lt;i data-lucide=&quot;heart&quot; class=&quot;w-12 h-12 fill-white&quot;&gt;&lt;/i&gt;
+                &lt;/div&gt;
+                &lt;div class=&quot;space-y-3&quot;&gt;
+                    &lt;span class=&quot;text-xs uppercase tracking-widest text-roseGold-500 font-semibold&quot;&gt;She Said Yes! 🎉&lt;/span&gt;
+                    &lt;h2 class=&quot;font-serif text-3xl md:text-4xl font-bold text-roseGold-900 leading-tight&quot;&gt;
+                        Yay! Best Day Ever! 🥰
+                    &lt;/h2&gt;
+                    &lt;p class=&quot;text-roseGold-700 text-sm md:text-base leading-relaxed&quot;&gt;
+                        Thank you, Tanjum, for making me the happiest person in the entire world. Here is to our wonderful new beginning together! 🥂✨
+                    &lt;/p&gt;
+                &lt;/div&gt;
+                &lt;div class=&quot;bg-white/70 p-4 rounded-2xl border border-roseGold-200 w-full text-center space-y-1&quot;&gt;
+                    &lt;p class=&quot;text-xs text-roseGold-500 font-medium&quot;&gt;Locked in with love&lt;/p&gt;
+                    &lt;p class=&quot;font-serif text-roseGold-900 font-bold text-lg&quot;&gt;Tanjum &amp; Me ❤️&lt;/p&gt;
+                &lt;/div&gt;
+                &lt;button onclick=&quot;resetApp()&quot; class=&quot;text-xs text-roseGold-500 hover:text-roseGold-700 underline pt-2&quot;&gt;
+                    Start over from the beginning
+                &lt;/button&gt;
+            &lt;/div&gt;
+
+        &lt;/div&gt;
+    &lt;/main&gt;
+
+    &lt;!-- Footer Note --&gt;
+    &lt;footer class=&quot;mt-8 text-center text-xs text-roseGold-700 z-10&quot;&gt;
+        Made with endless love, just for Tanjum ✨
+    &lt;/tfoot
+    
+    &lt;!-- JavaScript Application Logic --&gt;
+    &lt;script&gt;
+        // Initialize Lucide icons
+        lucide.createIcons();
+
+        // Reasons list for Step 2 rotator
+        const reasons = [
+            &quot;\&quot;The way your eyes light up when you talk about things you love.\&quot;&quot;,
+            &quot;\&quot;How safe and happy I feel whenever I'm right next to you.\&quot;&quot;,
+            &quot;\&quot;Your kindness and the gentle way you care for everyone around you.\&quot;&quot;,
+            &quot;\&quot;Every laugh we share makes my entire world infinitely better.\&quot;&quot;
+        ];
+        let currentReasonIdx = 0;
+        setInterval(() =&gt; {
+            currentReasonIdx = (currentReasonIdx + 1) % reasons.length;
+            const reasonEl = document.getElementById('reason-text');
+            if (reasonEl) {
+                reasonEl.style.opacity = '0';
+                setTimeout(() =&gt; {
+                    reasonEl.innerText = reasons[currentReasonIdx];
+                    reasonEl.style.opacity = '1';
+                }, 300);
+            }
+        }, 4000);
+
+        // Floating hearts generator
+        function createFloatingHearts() {
+            const container = document.getElementById('hearts-container');
+            const heartCount = 15;
+            for (let i = 0; i &lt; heartCount; i++) {
+                const heart = document.createElement('div');
+                heart.className = 'floating-heart';
+                heart.innerHTML = '&lt;svg xmlns=&quot;http://www.w3.org/2000/svg&quot; width=&quot;24&quot; height=&quot;24&quot; viewBox=&quot;0 0 24 24&quot; fill=&quot;currentColor&quot;&gt;&lt;path d=&quot;M19 14c1.49-1.46 3-3.21 3-5.5A5.5 5.5 0 0 0 16.5 3c-1.76 0-3 .5-4.5 2-1.5-1.5-2.74-2-4.5-2A5.5 5.5 0 0 0 2 8.5c0 2.3 1.5 4.04 3 5.5l7 7Z&quot;/&gt;&lt;/svg&gt;';
+                
+                // Random positioning and timing
+                const size = Math.floor(Math.random() * 20) + 12; // 12px to 32px
+                heart.style.width = `${size}px`;
+                heart.style.height = `${size}px`;
+                heart.style.left = `${Math.random() * 100}%`;
+                heart.style.animationDuration = `${Math.random() * 8 + 6}s`; // 6s to 14s
+                heart.style.animationDelay = `${Math.random() * 5}s`;
+                
+                container.appendChild(heart);
+            }
+        }
+        createFloatingHearts();
+
+        // Step Navigation Handler
+        function nextStep(stepNumber) {
+            document.querySelectorAll('.step-screen').forEach(el =&gt; {
+                el.classList.add('hidden');
+                el.classList.remove('flex');
+            });
+            const target = document.getElementById(`step-${stepNumber}`);
+            if (target) {
+                target.classList.remove('hidden');
+                target.classList.add('flex');
+            }
+            // Re-initialize icons for newly displayed elements
+            lucide.createIcons();
+        }
+
+        // Playful &quot;No&quot; button behaviors
+        const noPleas = [
+            &quot;Are you sure, Tanjum? 🥺&quot;,
+            &quot;Think about all the ice cream dates! 🍦&quot;,
+            &quot;My heart will be so sad... 💔&quot;,
+            &quot;You missed the 'Yes' button! Right over there 👉&quot;,
+            &quot;Pretty please with sprinkles on top? ✨&quot;,
+            &quot;Nope, that button is broken, try the other one! 😉&quot;
+        ];
+        let pleaIndex = 0;
+
+        function moveNoButton() {
+            const noBtn = document.getElementById('no-btn');
+            const pleaEl = document.getElementById('no-plea');
+            
+            // Random translation within bounds
+            const randomX = (Math.random() - 0.5) * 160;
+            const randomY = (Math.random() - 0.5) * 80;
+            
+            noBtn.style.transform = `translate(${randomX}px, ${randomY}px)`;
+            
+            // Show cute plea message
+            pleaEl.innerText = noPleas[pleaIndex];
+            pleaIndex = (pleaIndex + 1) % noPleas.length;
+            
+            // Slightly grow the Yes button for persuasion
+            const yesBtn = document.getElementById('yes-btn');
+            const currentScale = 1 + (pleaIndex * 0.05);
+            yesBtn.style.transform = `scale(${currentScale})`;
+        }
+
+        function handleNoClick() {
+            moveNoButton();
+        }
+
+        // Celebration Trigger on &quot;Yes&quot;
+        function celebrateSuccess() {
+            nextStep(5);
+            
+            // Trigger glorious confetti celebration
+            const duration = 4 * 1000;
+            const animationEnd = Date.now() + duration;
+            const defaults = { startVelocity: 30, spread: 360, ticks: 60, zIndex: 1000 };
+
+            function randomInRange(min, max) {
+                return Math.random() * (max - min) + min;
+            }
+
+            const interval = setInterval(function() {
+                const timeLeft = animationEnd - Date.now();
+
+                if (timeLeft &lt;= 0) {
+                    return clearInterval(interval);
+                }
+
+                const particleCount = 50 * (timeLeft / duration);
+                
+                // Confetti bursts in rose gold, pink, and gold tones
+                confetti(Object.assign({}, defaults, { 
+                    particleCount, 
+                    origin: { x: randomInRange(0.1, 0.3), y: Math.random() - 0.2 },
+                    colors: ['#ce5d5d', '#f5d1d1', '#ffd700', '#ff9494']
+                }));
+                confetti(Object.assign({}, defaults, { 
+                    particleCount, 
+                    origin: { x: randomInRange(0.7, 0.9), y: Math.random() - 0.2 },
+                    colors: ['#ce5d5d', '#f5d1d1', '#ffd700', '#ff9494']
+                }));
+            }, 250);
+        }
+
+        // Reset App flow
+        function resetApp() {
+            pleaIndex = 0;
+            document.getElementById('no-plea').innerText = &quot;&quot;;
+            const yesBtn = document.getElementById('yes-btn');
+            yesBtn.style.transform = 'scale(1)';
+            const noBtn = document.getElementById('no-btn');
+            noBtn.style.transform = 'translate(0, 0)';
+            nextStep(1);
+        }
+    &lt;/script&gt;
+&lt;/body&gt;
+&lt;/html&gt;</pre>
+</body>
+</html>
